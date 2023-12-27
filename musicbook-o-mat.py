@@ -146,8 +146,6 @@ with open(inputfile, "r") as stream:
             print(mako.exceptions.text_error_template().render())
             print("ERROR: Cannot write XSL-FO file!")
 
-        #    outputfile.write('<fo:block><fo:external-graphic src="url('+ clipartdir + '/' + definition['cover'] + ')" content-width="77%"/></fo:block>')
-
         outputfile.close()
     except yaml.YAMLError as exc:
         print(exc)
